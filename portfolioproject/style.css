@@ -1,69 +1,118 @@
-.mainbody {
-    background: image()
-}
-
-body {
+body{
     display: flex;
     flex-direction: column;
 }
 
 
-header {
+header{
     background-color: #ffffff;
     width: 100%;
 }
 
 
 h1, h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
 }
 
 
 
-h1 {
-    color: #ffffff;
-    background-color: #4aaaa5;
-    padding: 20px;
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
 }
 
 
-.nametag {
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+
+
+
+.name{
     justify-self: flex-start;
 }
 
 
 
-.nav-bar {
-    align-self: center;
-    justify-self: flex-end;
-  
+.name h1{
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 20px;
 }
 
-.heading{
+.nav-bar{
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.wrapper{
+    width: 70%;
+    
     margin: auto;
-    width: 80%;
+    
     display: flex;
+}
+
+.head{
     justify-content: space-between;
 }
 
-.bio{
-    padding: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+
+
+.main{
+    
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
+    top: 20px;
     background-color: #ffffff;
-    top: 25
+    
+}
+
+.title{
+    
+    padding-bottom: 10px;
+    
+    border-bottom: 2px #cccccc solid;
 }
 
 
-.bio-info {
+
+.bodycontent{
+    
+    border-top: 15px #4aaaa5 solid;
+    
+    border-bottom: 4px #4aaaa5 solid;
+    
+}
+
+
+
+
+.bioImage{
+    margin: 0 20px 20px 0;
+}
+
+
+.aboutMe{
     display: flex;
-    padding-top: 20px;
-    line-height: 1.5;
+    padding-top: 25px;
 }
 
+
+.contact-form{
+    margin-top: 20px;
+    width: 75%;
+}
+
+
+.form-control{
+    width: 100%;
+}
 
 .submit{
     background-color: #4aaaa5;
@@ -73,9 +122,10 @@ h1 {
 }
 
 
-.footer {
+.footer{
     background-color: #777777;
     height: 50px;
     display: flex;
+    justify-content: center;
     align-content: flex-end;
 }
