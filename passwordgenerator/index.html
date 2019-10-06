@@ -3,7 +3,7 @@
     <head>
         <title>Random Password</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, intial-scale=1.0">
+        <meta name="viewport">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,11 +24,19 @@
                         <br />
                         <input type="text" id="display">
                         <br />
+                        <p>8-128</p>
+                        <br />
                         <input type="range" min="8" max="128" name="slider" id="slider">
                         <br />
-                        <button onclick="">Generate</button>
+                        <button onclick="generate()">Generate</button>
                         <button onclick="">Copy to Clipboard</button>
                         <div id="length"></div>
+                    </div>
+
+                    <div class="previous">
+                        <h1>Generated Passwords</h1>
+                        <br />
+                        <div id="generatedPasswords"></div>
                     </div>
                 </div>
 
